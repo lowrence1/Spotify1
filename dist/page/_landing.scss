@@ -1,0 +1,114 @@
+.banner{
+    background: $clr-purple;
+ 
+    .wrapper{
+        padding-top: 8rem;
+        h1{
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: $clr-light;
+            padding-bottom: 2rem;
+        }
+        h4{
+            font-size: 1.7rem;
+            font-weight: 400;
+            padding-bottom: 2rem;
+            color:$clr-light ;
+        }
+        p{
+            color: white;
+            font-size: 1rem;
+            padding-top: 2rem;
+        }
+        span{
+           a{
+            text-decoration: underline;
+            color:#ffffff;
+           }
+        }
+        img{
+            width: 25rem;
+           margin-left: 8rem;
+           margin-top: 3rem;
+        }
+        }
+
+        &__btn{
+           
+            // justify-content: space-between;
+            // align-items: center;
+            // gap: 2rem;
+            a{
+                padding: 1.5rem 4rem;  
+                margin-bottom: 2rem;
+                font-size: 1rem;
+                font-weight: 800;
+            }
+            
+           .dark{
+            background: black;
+            color: white;
+            border-radius: 2rem;
+            display: flex;
+          align-items: center;
+          justify-content: center;
+           }
+           .dark:hover{
+            background: black;
+            color:white;
+            transform: scale(1.03);
+           }
+           .light{
+            color: white;
+            border: 3px solid white;
+            border-radius: 2rem;
+            display: flex;
+          align-items: center;
+          justify-content: center;
+           }
+
+           .light:hover{
+            border: 3px solid white;
+            border-radius: 2rem;
+            color:white;
+            transform: scale(1.03);
+           }
+        }
+  }
+  @include mediaQuery($break-lg){
+      .banner{
+        .wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            img{
+                width: 40rem;
+            }
+            h1{
+                font-size: 4.5rem;
+                max-width: 70rem;
+            }
+            h4{
+                text-align: justify;
+                font-size: 2rem;
+                font-weight: 800;
+
+            }
+            span{
+                a{
+                    text-decoration: underline;
+                    color:#ffffff;
+                   }
+            }
+        }
+        &__btn{
+           max-width: 50%;
+           display: flex;
+           gap: 1rem;
+            
+           
+        }
+      }
+        }
+      
+    
