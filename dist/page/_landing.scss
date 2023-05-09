@@ -24,19 +24,16 @@
             padding-top: 2rem;
             padding-bottom: 2rem;
         }
-            .kamote {
-                p{
-                    font-size: 1rem;
-                }
-                color: #ffffff;
+
+        .kamote{
+            p{
+                font-size: 1rem;
                 a{
                     text-decoration: underline;
                     color: #FFFFFF;
-                    ;
                 }
             }
-        
-
+    }
         figure {
             text-align: center;
 
@@ -86,7 +83,7 @@
             transform: scale(1.03);
         }
      }
-    .ban__btn {
+    &__btn {
         a {
             padding: 1.5rem 4rem;
             margin-bottom: 2rem;
@@ -154,7 +151,7 @@
                 .a {
                     text-decoration: underline;
                     color: #ffffff;
-                     max-width: 13rem
+                    
                 }
             }
         }

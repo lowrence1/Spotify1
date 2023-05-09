@@ -183,13 +183,10 @@ body {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.banner .wrapper .kamote {
-  color: #ffffff;
-}
 .banner .wrapper .kamote p {
   font-size: 1rem;
 }
-.banner .wrapper .kamote a {
+.banner .wrapper .kamote p a {
   text-decoration: underline;
   color: #FFFFFF;
 }
@@ -233,13 +230,13 @@ body {
   color: white;
   transform: scale(1.03);
 }
-.banner .ban__btn a {
+.banner__btn a {
   padding: 1.5rem 4rem;
   margin-bottom: 2rem;
   font-size: 1rem;
   font-weight: 800;
 }
-.banner .ban__btn .dark {
+.banner__btn .dark {
   background: black;
   color: white;
   border-radius: 2rem;
@@ -247,12 +244,12 @@ body {
   align-items: center;
   justify-content: center;
 }
-.banner .ban__btn .dark:hover {
+.banner__btn .dark:hover {
   background: black;
   color: white;
   transform: scale(1.03);
 }
-.banner .ban__btn .light {
+.banner__btn .light {
   color: white;
   border: 3px solid white;
   border-radius: 2rem;
@@ -260,7 +257,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.banner .ban__btn .light:hover {
+.banner__btn .light:hover {
   border: 3px solid white;
   border-radius: 2rem;
   color: white;
@@ -288,7 +285,6 @@ body {
   .banner .wrapper span .a {
     text-decoration: underline;
     color: #ffffff;
-    max-width: 13rem;
   }
   .banner .ban__btn {
     width: 100%;
