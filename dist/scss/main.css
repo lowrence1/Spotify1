@@ -179,27 +179,34 @@ body {
 }
 .banner .wrapper p {
   color: white;
-  font-size: 1rem;
+  font-size: 2rem;
   padding-top: 2rem;
+  padding-bottom: 2rem;
 }
-.banner .wrapper span a {
-  text-decoration: underline;
+.banner .wrapper .kamote {
   color: #ffffff;
+}
+.banner .wrapper .kamote p {
+  font-size: 1rem;
+}
+.banner .wrapper .kamote a {
+  text-decoration: underline;
+  color: #FFFFFF;
 }
 .banner .wrapper figure {
   text-align: center;
 }
 .banner .wrapper figure img {
-  width: 25rem;
+  width: 45rem;
   padding-top: 2rem;
 }
-.banner__btn a {
+.banner .ban__btn a {
   padding: 1.5rem 4rem;
   margin-bottom: 2rem;
   font-size: 1rem;
   font-weight: 800;
 }
-.banner__btn .dark {
+.banner .ban__btn .dark {
   background: black;
   color: white;
   border-radius: 2rem;
@@ -207,12 +214,12 @@ body {
   align-items: center;
   justify-content: center;
 }
-.banner__btn .dark:hover {
+.banner .ban__btn .dark:hover {
   background: black;
   color: white;
   transform: scale(1.03);
 }
-.banner__btn .light {
+.banner .ban__btn .light {
   color: white;
   border: 3px solid white;
   border-radius: 2rem;
@@ -220,7 +227,40 @@ body {
   align-items: center;
   justify-content: center;
 }
-.banner__btn .light:hover {
+.banner .ban__btn .light:hover {
+  border: 3px solid white;
+  border-radius: 2rem;
+  color: white;
+  transform: scale(1.03);
+}
+.banner .ban__btn a {
+  padding: 1.5rem 4rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  font-weight: 800;
+}
+.banner .ban__btn .dark {
+  background: black;
+  color: white;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner .ban__btn .dark:hover {
+  background: black;
+  color: white;
+  transform: scale(1.03);
+}
+.banner .ban__btn .light {
+  color: white;
+  border: 3px solid white;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner .ban__btn .light:hover {
   border: 3px solid white;
   border-radius: 2rem;
   color: white;
@@ -245,14 +285,15 @@ body {
     font-size: 2rem;
     font-weight: 800;
   }
-  .banner .wrapper span a {
+  .banner .wrapper span .a {
     text-decoration: underline;
     color: #ffffff;
+    max-width: 13rem;
   }
-  .banner__btn {
-    max-width: 50%;
+  .banner .ban__btn {
+    width: 100%;
+    gap: 3rem;
     display: flex;
-    gap: 1rem;
   }
 }
 .premium .container h2 {
@@ -340,79 +381,104 @@ body {
 .cards {
   background: #EFEFEF;
 }
-.cards__wrapper h1 {
+.cards__title h1 {
   text-align: center;
   font-size: 3rem;
 }
-.cards__wrapper p {
-  align-items: center;
-  margin: 0 auto;
+.cards__title p {
+  text-align: center;
+  margin-left: 2.5rem;
 }
-.cards__wrapper p ul {
-  width: 2rem;
-}
-.cards__wrapper .image {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  justify-content: center;
+.cards__title .image {
   margin-top: 2rem;
-}
-.cards__wrapper .image span {
-  text-decoration: underline;
-}
-.cards__wrapper .image ul {
   display: flex;
   justify-content: center;
 }
-.cards__wrapper .image ul p {
+.cards__title .image ul {
   display: flex;
+  justify-content: center;
 }
-.cards__wrapper .image ul li img {
+.cards__title .image ul li {
+  margin-right: 0.5rem;
+  align-items: center;
+}
+.cards__title .image ul li img {
   width: 3rem;
 }
-.cards__wrapper .payment {
+.cards__title .image a {
+  text-decoration: underline;
+}
+.cards .payment {
   background: #FFFFFF;
-  border: 95%;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
 }
-.cards__wrapper .payment .cards__text {
+.cards .payment p:last-child a {
+  text-decoration: underline;
+}
+.cards .payment .cards__text {
   border-bottom: 1px solid black;
-  width: 90%;
-  margin-left: 2rem;
 }
-.cards__wrapper .payment .cards__text .blue {
+.cards .payment .cards__text .blue {
   background: #0D72EA;
-  width: 35rem;
   margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
   color: white;
-  font-size: 1.7rem;
-  margin-top: 2rem;
+  font-size: 1.5rem;
+  border: 1px solid #0D72EA;
+  border-radius: 0.5rem;
 }
-.cards__wrapper .payment .cards__text .white {
-  border: 3px solid #0D72EA;
+.cards .payment .cards__text .white {
+  border: 1px solid #0D72EA;
   width: 15rem;
-  margin-top: 1rem;
   color: #0D72EA;
-  margin-left: 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.7rem;
+  text-align: center;
 }
-.cards__wrapper .payment .cards__text h3 {
+.cards .payment .cards__text h3 {
   font-size: 3rem;
+  margin: 1rem 0rem;
+}
+.cards .payment .cards__text p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.cards .payment .cards__text p:last-child {
+  margin-bottom: 3rem;
+}
+.cards .payment .cards__payment {
   padding-top: 2rem;
-  margin-left: 2rem;
 }
-.cards__wrapper .payment .cards__text p {
-  font-size: 1.7rem;
-  margin-left: 2rem;
+.cards .payment .cards__payment span {
+  font-size: 1.2rem;
 }
-.cards__wrapper .payment .cards__payment {
-  font-size: 1.7rem;
-  display: flex;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  margin-left: 2rem;
+.cards .payment .cards__payment span a {
+  text-decoration: underline;
 }
-.cards__wrapper .payment .cards__payment .banner__btn {
-  margin-top: 2rem;
-  width: 40rem;
+.cards .payment .cards__payment ul li {
+  margin-bottom: 1.5rem;
+}
+.cards .payment .cards__payment ul li a {
   margin-left: 1rem;
+}
+.cards .payment .cards__payment .banner__btn {
+  margin-top: 2rem;
+  width: 100%;
+}
+@media screen and (min-width: 1080px) {
+  .cards__wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1rem;
+  }
+  .cards__text {
+    min-height: 22rem;
+  }
+  .cards__payment {
+    min-height: 18rem;
+  }
 }/*# sourceMappingURL=main.css.map */
