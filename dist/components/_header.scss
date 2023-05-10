@@ -23,6 +23,10 @@
     position: relative;
     position: fixed;
     width: 100%;
+    &.blue{
+        background: blue;
+    }
+    
     .blur{
         height: 100vh;
         width: 21%;

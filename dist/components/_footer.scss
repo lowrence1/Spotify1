@@ -1,0 +1,56 @@
+.footer{
+    background: $clr-dark;
+   
+ &__wrapper{
+    h5{
+        color: $clr-gray;
+        img{width: 1rem;}
+        text-align: right;
+        span{
+            &:hover{
+                cursor: pointer;
+                color: $clr-green;
+            }
+        }
+    }
+   
+}
+&__text{
+    margin: 2rem 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    ul{
+        max-width: 25rem;
+         display: flex;
+        flex-wrap: wrap;
+       gap: 1rem;
+      
+    li{
+            a{
+                color: $clr-gray;
+                font-size: 1rem;
+                &:hover{
+                    color: $clr-green;
+                }
+            }
+           
+        }    
+    }
+    p{ text-align: right;
+        color: $clr-gray;
+        font-size: 1.5rem;
+        align-items: baseline;
+     
+    }
+
+}
+@include mediaQuery($break-lg) {
+    &__text{
+        ul{
+            max-width: 55rem;
+          
+        }
+    }
+}
+}
